@@ -1,7 +1,7 @@
 Dear Yaron, 
 
 I was able to complete the homework assignment but noticed towards the end that all 
-of the actions to be performed have to be shell scripts. 
+of the actions to be performed had to be shell scripts. 
 
 As I do not want to create the false impression that I know how to write 
 anything but the most basic shell scripts, I've chosen to only make the first file into a shell script. 
