@@ -35,13 +35,17 @@
 
 5. First went into /etc/ssh/sshd_config and set *PasswordAuthentication* to no
 
-     ran service ssh restart
+        ran service ssh restart
 
-     ran ssh-keygen
+   	ran ssh-keygen
 
-     on server1 ssh-copy-id root@server2
+     on server1 ran 
+     
+     	ssh-copy-id root@server2
 
-     on server2 ssh-copy-id root@server1
+     on server2 ran 
+     	
+	ssh-copy-id root@server1
 
 	
 
