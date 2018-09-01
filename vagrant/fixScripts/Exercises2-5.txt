@@ -1,0 +1,57 @@
+1. Ran the command route and saw a rogue entry which I deleted by using 
+
+     route del 208.86.224.90
+    
+2. Ran the command 
+
+     sudo nano /etc/hosts
+
+   I deleted the entry 
+
+     127.0.0.1 ascii-art.de 
+
+   that was preventing me from connecting.
+   
+3. Inside of /etc/apache2/sites-enabled/000-default
+
+   under the configuration for /var/www/ I removed the *deny from all* entry, 
+   where I understood the final config should look like this:
+
+      <Directory /var/www/>
+         Options Indexes FollowSymLinks Includes ExecCGI
+         AllowOverride All
+         Allow from all
+      </Directory>
+
+4. On server1 went into /etc/hosts/ and added the line 
+	
+	192.168.100.11 server2
+
+   On server2 went into /etc/hosts/ and added the line 
+
+	192.168.100.10 server1 
+
+   created a password on both servers using passwd while logged in as root
+
+5. First went into /etc/ssh/sshd_config and set *PasswordAuthentication* to no
+
+       ran service ssh restart
+
+      ran ssh-keygen
+
+     on server1 ran 
+     
+     	ssh-copy-id root@server2
+
+     on server2 ran 
+     	
+	ssh-copy-id root@server1
+
+	
+
+
+
+
+
+
+
