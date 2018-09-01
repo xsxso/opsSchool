@@ -1,0 +1,2 @@
+Yes, you can make pull request from your fork to original repo!
+On github: New pull request -> click "compare across forks" -> make a pull request from you fork (head fork) to original repo (base fork)
